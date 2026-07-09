@@ -1,6 +1,11 @@
-def getchange(cost, paid):
-    return paid - cost
+try:
+    
+    user_age=int(input("Enter your age:  "))
+    if user_age%2==0:
+       print("the age is an even number")
 
-change = getchange(2.5, 4.0)
+    else:
+        print("the age is an odd number")
 
-print("The shopkeeper owes you: $",change)
+except ValueError:
+    print("please enter a whole number only")
